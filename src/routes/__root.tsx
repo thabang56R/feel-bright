@@ -47,6 +47,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Sentio AI — Sentiment Analysis Platform" },
       { name: "description", content: "AI-powered sentiment analysis SaaS. Analyze reviews, track trends, generate insights." },
+      { property: "og:title", content: "Sentio AI — Sentiment Analysis Platform" },
+      { name: "twitter:title", content: "Sentio AI — Sentiment Analysis Platform" },
+      { property: "og:description", content: "AI-powered sentiment analysis SaaS. Analyze reviews, track trends, generate insights." },
+      { name: "twitter:description", content: "AI-powered sentiment analysis SaaS. Analyze reviews, track trends, generate insights." },
+      { name: "twitter:card", content: "summary" },
+      { property: "og:type", content: "website" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
